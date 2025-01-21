@@ -1,0 +1,342 @@
+/*====================头部====================*/
+
+/*导航条*/
+.nav > li > a, .mobile-sidebar-levels-2 .nav > li > ul > li > a{
+    font-weight: 400 !important;
+}
+
+/*透明亮文字添加遮罩*/
+.has-transparent{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* 从黑色到透明的渐变背景 */
+}
+
+/*移动端最大logo宽度*/
+@media only screen and (max-width: 48em) {
+    #logo img {
+        height: 31px;
+    }
+}
+
+/*====================排版====================*/
+
+/* 字体修改 */
+/*body,h1, h2, h3, h4, h5, h6, .heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a,.nav > li > a {*/
+h1, h2, h3, h4, h5, h6 {
+   /*font-weight: 300 !important;*/
+}
+
+/* 字间距 */
+.ls2{
+    letter-spacing:2px
+}
+
+/* ICON行高 */
+.links>li>a:before, i[class*=" icon-"], i[class^=icon-]{
+        /*line-height: 2;*/
+}
+
+
+/* 大标题通过添加class line-none 隐藏线条 */
+.line-none h2 b{
+    opacity: 0;
+}
+
+/*图片和文字排序*/
+@media screen and (max-width: 768px) { 
+	.text-img-box { 
+		display: flex; 
+		flex-direction: column-reverse; 
+	} 
+	.text {
+		order: 1;
+	} .imge {
+		order: 2;
+	} 
+
+}
+
+/*行分割线透明度降低*/
+@media screen and (min-width: 850px){
+    .row-divided>.col+.col:not(.large-12) {
+        border-left: 1px solid #ececec40;
+    }
+}
+.section-title-bold span, .section-title-bold-center span {
+    border: 2px solid rgba(0,0,0,.1);
+    padding: 0;
+}
+
+
+/*====================布局-距离====================*/
+
+/*布局*/
+/*5列布局*/
+.col-5 {
+    width: 20% !important;
+    float: left !important;
+    display: block !important;
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+@media only screen and (max-width: 48em) {
+  .col-5 {
+        width: 50% !important;
+        float: left !important;
+        display: block !important;
+        flex-basis: 50%;
+        max-width: 50%;
+    }  
+}
+
+/* 元素间距 */
+.p0m0 *{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.m0{
+    margin:0!important
+}
+.mb0{
+    margin-bottom:0!important
+}
+.mb5{
+    margin-bottom:5px!important
+}
+.mb10{
+    margin-bottom:10px!important
+}
+.mb20{
+    margin-bottom:20px!important
+}
+.mb30{
+    margin-bottom:30px!important
+}
+.mb40{
+    margin-bottom:40px!important
+}
+.mt0{
+    margin-top:0!important
+}
+.mt5{
+    margin-top:5px!important
+}
+.mt10{
+    margin-top:10px!important
+}
+.mt20{
+    margin-top:20px!important
+}
+.mt30{
+    margin-top:30px!important
+}
+.mt40{
+    margin-top:40px!important
+}
+/* 填充 */
+.p0{
+    padding:0!important
+}
+.pt0{
+    padding-top:0!important
+}
+.pt5{
+    padding-top:5px!important
+}
+.pt10{
+    padding-top:10px!important
+}
+.pt20{
+    padding-top:20px!important
+}
+.pt30{
+    padding-top:30px!important
+}
+.pt40{
+    padding-top:40px!important
+}
+.pb0{
+    padding-bottom:0!important
+}
+.pb5{
+    padding-bottom:5px!important
+}
+.pb10{
+    padding-bottom:10px!important
+}
+.pb20{
+    padding-bottom:20px!important
+}
+.pb30{
+    padding-bottom:30px!important
+}
+.pb40{
+    padding-bottom:30px!important
+}
+
+.text-000 a:hover{
+    color:var(--fs-color-primary)
+}
+
+/*====================底部====================*/
+/*隐藏底部*/
+.absolute-footer {
+    display: none;
+}
+
+
+
+/*====================图片美化====================*/
+
+/* 图片圆角样式 */
+.bra5 img{
+    border-radius:5px;
+}
+.bra10 img{
+    border-radius:10px;
+}
+.bra15 img{
+    border-radius:15px;
+}
+.bra20 img{
+    border-radius:20px;
+}
+.bra30 img{
+    border-radius:30px;
+}
+.bra40 img{
+    border-radius:40px;
+}
+.bra50 img{
+    border-radius:50%;
+}
+
+/* 定义呼吸动画 */
+@keyframes breathe {
+  0% {
+    transform: scale(1); /* 初始大小 */
+  }
+  50% {
+    transform: scale(1.15); /* 最大1.2倍 */
+  }
+    100% {
+    transform: scale(1); /* 初始大小 */
+  }
+}
+
+.big-img .bg-loaded{
+  width: 100%; /* 图片宽度占据容器的100% */
+  height: auto; /* 根据宽度自适应高度 */
+  animation: breathe 20s infinite alternate; /* 使用关键帧动画，4秒完成一次来回，无限循环 */
+}
+
+/*按钮*/
+.button.is-outline, input[type=button].is-outline, input[type=reset].is-outline, input[type=submit].is-outline {
+    background-color: transparent;
+    border: 1px solid;
+}
+/*修复图标和文字偏离*/
+.button i, button i {
+    top: 0;
+}
+
+.button.is-underline:before {
+    background-color: currentColor;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: .3;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+}
+
+
+/* 表单 */
+.fluentform .ff-el-form-control {
+    background-clip: padding-box;
+    background-image: none;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #495057;
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    max-width: 100%;
+    padding: 6px 12px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+}
+.fluentform .ff-el-form-control {
+     border-radius: 0.1rem!important;
+	  box-shadow: none !important;
+}
+.fluentform .ff-el-form-control:hover {
+    background: #fff !important;
+
+}
+.fluentform .ff-el-input--label label{
+	color:#444;
+}
+.ff-default .ff-el-input--label label {
+    display: inline-block;
+    font-weight: 500;
+    line-height: inherit;
+    margin-bottom: 0;
+    font-size: 100%;
+}
+
+.ff-message-success {
+    border: 1px solid #ced4da;
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    margin-top: 10px;
+    padding: 15px;
+    position: relative;
+    color: #569791;
+    font-size: 200%;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+/** Table 表格样式 **/
+.single-post table{
+    border-collapse: collapse;
+    width:100%;
+    border:1px solid #c6c6c6 !important;
+    margin-bottom:20px;
+}
+.single-post th{
+    border-collapse: collapse;
+    border-right:1px solid #c6c6c6 !important;
+    border-bottom:1px solid #c6c6c6 !important;
+    background-color:#ddeeff !important; 
+    padding:5px 9px;
+    font-weight:normal;
+    text-align:left;
+}
+.single-post td{
+    border-collapse: collapse;
+    border-right:1px solid #c6c6c6 !important;
+    border-bottom:1px solid #c6c6c6 !important; 
+    padding:5px 9px;
+    font-weight:normal;
+    word-break: break-all;
+}
+.single-post tr:nth-child(odd){
+    background-color:#fff !important; 
+}
+.single-post tr:nth-child(even){
+    background-color: #f8f8f8 !important;
+}
+
+.single-post td:first-child, .single-post th:first-child {
+    padding-left: 10px;
+}
+
+.single-post td:last-child, .single-post th:last-child {
+    padding-right: 10px;
+}
