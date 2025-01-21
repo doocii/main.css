@@ -185,8 +185,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-
-
 /*====================图片美化====================*/
 
 /* 图片圆角样式 */
@@ -231,11 +229,12 @@ h1, h2, h3, h4, h5, h6 {
   animation: breathe 20s infinite alternate; /* 使用关键帧动画，4秒完成一次来回，无限循环 */
 }
 
-/*按钮*/
+/*修改按钮线条宽度*/
 .button.is-outline, input[type=button].is-outline, input[type=reset].is-outline, input[type=submit].is-outline {
     background-color: transparent;
     border: 1px solid;
 }
+
 /*修复图标和文字偏离*/
 .button i, button i {
     top: 0;
