@@ -38,8 +38,15 @@ header .has-dropdown .icon-angle-down {
     width: 100%;
 }
 
+/*====================排版====================*/
+/*轮播数量小圆点移动端缩小*/
+@media screen and (max-width: 768px) { 
+    .flickity-page-dots .dot {
+        height: 6px;
+        width: 6px;
+    }
 
-
+}
 /*====================排版====================*/
 
 /* 字体修改 */
