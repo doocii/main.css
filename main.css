@@ -214,6 +214,13 @@ h1, h2, h3, h4, h5, h6 {
 .absolute-footer {
     display: none;
 }
+/*底部小工具菜单隐藏横线*/
+.widget>ul>li, ul.menu>li {
+    list-style: none;
+    margin: 0;
+    text-align: left;
+}
+
 
 /*====================图片美化====================*/
 
