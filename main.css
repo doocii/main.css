@@ -383,3 +383,36 @@ html,body{
 .single-post td:last-child, .single-post th:last-child {
     padding-right: 10px;
 }
+
+/*
+* FAQs 样式调整
+最外围添加.faq-list即可
+*/
+.accordion .toggle {
+    right: 0 !important;
+    left: auto;
+}
+
+
+.toggle i {
+    font-size: 1em;
+    transition: all .3s;
+}
+
+.faq-list .icon-angle-down:before{
+    content: "" !important;
+    font-size: 12px;
+}
+
+.accordion-title:before {
+    content: "\f29c"; /* Unicode 对应 Font Awesome 图标的代码 */
+    font-family: "Font Awesome 5 Free"; /* 指定 Font Awesome 的字体系列 */
+    margin-right: 5px; /* 可选：增加图标与文本之间的间距 */
+    position: absolute;
+    left: 10px;
+}
+
+.accordion-title {
+    padding: 0.6em 2.3em 0.6em 2.3em;
+    font-size: 90%;
+}
