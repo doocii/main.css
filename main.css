@@ -1,5 +1,7 @@
 /*====================头部====================*/
 
+
+
 /*导航条*/
 .nav > li > a, .mobile-sidebar-levels-2 .nav > li > ul > li > a{
     font-weight: 400 !important;
@@ -342,6 +344,28 @@ html,body{
     font-size: 200%;
     text-align: center;
     line-height: 1.2;
+}
+
+
+.ff-default .ff_btn_style {
+    border: 1px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 8px 20px;
+    position: relative;
+    text-align: center;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    background: var(--fs-color-primary) !important;
+    border-radius: 0 !important;
 }
 
 
